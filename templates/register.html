@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+<title> register </title>
+</head>
+<body>
+  <body>
+    
+    <header>
+      <h2 class="logo">LookABook</h2>
+      <nav class="navigation">
+          <a href="{{ url_for('index')}}" class="active">Home</a>
+          <a href="{{ url_for('books')}}">Books</a>
+          <a href="{{ url_for('login')}}">Login</a>
+          <a href="{{ url_for('register')}}">Register</a>
+          <input type="text" placeholder="Ready to LookABook?">
+      </nav>
+
+      </div>
+  </header>
+
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>REGISTER</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+          <p>
+            <label><b> Gender:</b></label> 
+
+            <input type="radio" id="gender" name="gender" value="male" /> Male 
+            
+            <input type="radio" id="gender" name="gender" value="female" /> Female </br>
+            <span> </span>
+          </p>  
+          <button><a href="{{ url_for('login')}}" style="text-decoration: none;">Register</a></button>
+          <p class="message">Not registered? <a href="{{ url_for('login')}}">Login</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>

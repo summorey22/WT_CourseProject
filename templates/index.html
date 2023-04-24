@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookABook</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">LookABook</h2>
+        <nav class="navigation">
+            <a href="{{ url_for('index')}}" class="active">Home</a>
+            <a href="{{ url_for('books')}}">Books</a>
+            <a href="{{ url_for('login')}}">Login</a>
+            <a href="{{ url_for('register')}}">Register</a>
+            <input type="text" placeholder="Ready to LookABook?">
+        </nav>
+
+        </div>
+    </header>
+
+    <div id="parallax">
+        <section class="parallax">
+            <img src="{{ url_for('static', filename='img/hill1.png') }}" id="hill1">
+            <img src="{{ url_for('static', filename='img/hill2.png') }}" id="hill2">
+            <img src="{{ url_for('static', filename='img/hill3.png') }}" id="hill3">
+            <img src="{{ url_for('static', filename='img/hill4.png') }}" id="hill4">
+            <img src="{{ url_for('static', filename='img/hill5.png') }}" id="hill5">
+            <img src="{{ url_for('static', filename='img/tree.png') }}" id="tree">
+            <h2 id="text"> Welcome to LookABook</h2>
+            <img src="{{ url_for('static', filename='img/leaf.png') }}" id="leaf">
+            <img src="{{ url_for('static', filename='img/plant.png') }}" id="plant">
+        </section>
+
+            <section class="sec">
+                <h2>About:</h2>
+                <p>
+                    <b>LookABook</b> is a website made book lovers, authors, and publishers falling under engineering domain. 
+                    It allows users to go through various book concisely created considering thier curriculam. 
+                    The platform has a vast database of books, and is a go-to source for readers seeking information and recommendations on books. 
+                    LookABook has a strong potential to become an essential tool for authors and publishers as it offers them an opportunity to interact with 
+                    their readers. Overall, LookABook also considers itself a strong apponent to the other book or library based websites and is sure 
+                    to create a thriving community of book lovers, providing them with a platform to share their passion for reading and discover new books in
+                    order to understand and not anly thrive through their curriculam but also thrying to ace it. 
+                    <br>
+                    <h3>Happy Learning Reader!</h3>
+                </p>
+            </section>
+        
+
+        <div class="cont">
+            <section class="contact">
+            
+                <h2>Contact Us</h2>
+                <p>leave us a message or suggestion:</p>
+        
+                <div class="column">
+                  <form action="/index.html">
+                    <input type="text" id="fname" class="inputf" name="fullname" placeholder="Your name...">
+                    <input id="email" name="email"  class="inputf" placeholder="your email">
+                    <textarea id="subject" name="subject" class="inputf" placeholder="Let us know your suggestions.." style="height:140px"></textarea>
+                    <br>
+                    <button type="button" class="btn"> Send Message</button>
+                  </form>
+                </div>
+        
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
